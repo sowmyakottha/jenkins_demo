@@ -26,7 +26,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('lakshminagathrisowmya', 'dckr_pat_g4N1qFg7ZuXspU2FDVkfws7TsKs') {
+                    docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
                         docker.image(DOCKER_IMAGE).push()
                     }
                 }
