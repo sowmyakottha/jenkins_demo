@@ -4,8 +4,8 @@ pipeline {
     }
     
     environment {
-        DOCKER_IMAGE = 'discoverdevops/my-app:latest'
-        GIT_REPO = 'https://github.com/discover-devops/JenkinsDemo.git'
+        DOCKER_IMAGE = 'sowmyakottha/my-app:latest'
+        GIT_REPO = 'https://github.com/sowmyakottha/jenkins_demo.git'
     }
 
     stages {
